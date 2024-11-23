@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.NewPage1"
+             Title="Cargadora de Peso">
+    <VerticalStackLayout>
+        <Label Text="Cargadora de Peso"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Entry Placeholder="Ingrese el peso"
+               x:Name="entryPeso" />
+
+        <Image Source="your_image.png"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <HorizontalStackLayout>
+            <Button Text="Agregar"
+                    Clicked="Agregar_Clicked" />
+            <Button Text="Borrar"
+                    Clicked="Borrar_Clicked" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
